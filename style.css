@@ -21,10 +21,6 @@
   .gif1 { grid-area: gif1; }
   .gif2 { grid-area: gif2; }
   .navbar { grid-area: navbar; margin:0; }
-
-  body{
-    font-family: 'Lekton', sans-serif;
-  }
   
   h1{
     font-size: 400;
