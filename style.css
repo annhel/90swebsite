@@ -1,32 +1,31 @@
-.container {  display: grid;
-    grid-template-columns: 1fr 0.3fr 2.4fr 0.3fr 1fr;
-    grid-template-rows: 0.8fr 0.2fr 2.1fr 0.1fr 1.8fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . titles . ."
-      "navbar navbar navbar navbar navbar"
-      "img1 . list . img2"
+.container {
+    display: grid; 
+    grid-template-columns: 0.5fr 0.8fr 2.4fr 0.7fr 0.6fr; 
+    grid-template-rows: 0.4fr 0.2fr 1.8fr 0.1fr 2.5fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". gif1 titles gif2 ."
+      ". . navbar . ."
+      "img1 img1 list img2 img2"
       ". . . . ."
-      ". img3 img4 img5 .";
+      ". img3 img4 img5 ."
+      ". . . . ."; 
+  }
+  .list { grid-area: list; }
+  .img3 { grid-area: img3; }
+  .img4 { grid-area: img4; }
+  .img5 { grid-area: img5; }
+  .titles { grid-area: titles; margin:0;}
+  .img1 { grid-area: img1; }
+  .img2 { grid-area: img2; }
+  .gif1 { grid-area: gif1; }
+  .gif2 { grid-area: gif2; }
+  .navbar { grid-area: navbar; margin:0; }
+
+  body{
+    font-family: 'Lekton', sans-serif;
   }
   
-  .img1 { grid-area: img1; }
-  
-  .navbar { grid-area: navbar; }
-  
-  .list { grid-area: list; }
-  
-  .img2 { grid-area: img2; }
-  
-  .img3 { grid-area: img3; }
-  
-  .img4 { grid-area: img4; }
-  
-  .img5 { grid-area: img5; }
-  
-  .titles { grid-area: titles; }
-
-  @font-face{
-    font-family: 'Lekton', sans-serif;
+  h1{
+    font-size: 400;
   }
